@@ -52,8 +52,8 @@ console.log(x)
 
  var gitLength = function (string) {
  	var count = 0;
- 	while(string[count]!=null){
- 		count++ ;
+ 	while(string[count]!= undefined){
+ 		count+=1;
 
  	}
 
@@ -75,13 +75,12 @@ var length= gitLength("pig");
 
 var greateThan = function (x,y){
 if (x > y {
-	console.log(true)
+	return true;
 }
 else{
-	console.log(false)
+	return false;
 	}
-}
-test(5,8);
+};
 
 
 
