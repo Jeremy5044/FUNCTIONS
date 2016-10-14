@@ -50,18 +50,13 @@ console.log(x)
 // Write a function called `getLength` that takes one
 // parameter (a string) and returns the length
 
- var gitLength = function (string) {
- 	var count = 0;
- 	while(string[count]!= undefined){
- 		count+=1;
-
- 	}
-
- 	return count ;}
- 
+ var gitLength = function (pig) {
+ 	return pig.length;
+ 	
+ 	};
 
 
-var length= gitLength("pig");
+           gitLength("pig");
 
 
 
@@ -73,15 +68,16 @@ var length= gitLength("pig");
 // parameter is greater than the first. Otherwise
 // the function should return `false`.
 
-var greateThan = function (x,y){
-if (x > y {
+var greatThan = function (x,y) {
+if (x < y ){
 	return true;
-}
-else{
-	return false;
-	}
-};
 
+}else{
+	return false;
+  }
+
+};
+greatThan(2,6)
 
 
 
@@ -94,12 +90,12 @@ else{
 // is the parameter that was passed in.
 
 
-string str"jeremy";
-int count=0;
-for(char c:str.toCharArray()){
-  count++;
-}
-System.out.println(count);
+var greet =function (name){
+	return ("hello" + " " + "jeremy");
+		
+	};
+	greet("jeremy")
+
 
 
 // Q6
@@ -112,9 +108,9 @@ System.out.println(count);
 // strings. For example:
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
+var midlib=function(run,jump,fly,duck){
 
-
-
+}
 
 ///////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////

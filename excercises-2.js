@@ -1,94 +1,76 @@
-///////////////////////////////////////////////////////
-///////////////////////////////////////////////////////
-////    ______                _   _                ////
-////    |  ___|              | | (_)               ////
-////    | |_ _   _ _ __   ___| |_ _  ___  _ __     ////
-////    |  _| | | | '_ \ / __| __| |/ _ \| '_ \    ////
-////    | | | |_| | | | | (__| |_| | (_) | | | |   ////
-////    \_|  \__,_|_| |_|\___|\__|_|\___/|_| |_|   ////
-////                                               ////
-////                                               ////
-////    ______               _   _                 ////
-////    | ___ \             | | (_)                ////
-////    | |_/ / __ __ _  ___| |_ _  ___ ___        ////
-////    |  __/ '__/ _` |/ __| __| |/ __/ _ \       ////
-////    | |  | | | (_| | (__| |_| | (_|  __/       ////
-////    \_|  |_|  \__,_|\___|\__|_|\___\___|       ////
-////                                               ////
-////                                               ////
-///////////////////////////////////////////////////////
-///////////////////////////////////////////////////////
+// ---------------------
+// Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in JavaScript.
+// ---------------------
 
+function max(x,y){
+    if (x>y) {
+    	return x;
+    }else{
+    	return y;
+    }
+};
+max(2,3)
 
-// Q1
-// Write a function called `sum` that takes two
-// parameters and returns the sum of those 2 numbers.
+// ---------------------
+// Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
+// ---------------------
 
-function max (x,y){
-	if (x >y){
-	}else{
-		return y;
+function maxOfThree(x,y,z){
+    if(x>= y && x >=z){return x;}
+if (y>=x && y>= z){return y;}
+return z;
+};
+maxOfThree(6,3,6)
+// ---------------------
+// Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
+// ---------------------
+
+function isVowel(char){
+	var vowel=["a","e","i","o","u"];
+	if (vowel==="e"){
+		return true;
+	
+	}else{ 
+		return false;
 	}
+};
+isVowel()
+
+// ---------------------
+// Write a function translate() that will translate a text into 
+//"Rovarspraket". That is, double every consonant and place an occurrence of 
+//"o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
+// ---------------------
+
+
+	function translate (phrase) {
+  var newPhrase = " ";
+  for (var count = 0; count < phrase.length; count++) {
+    var letter = phrase[count];
+    if (cleanerIsVowel(letter) || letter === " ") {
+      newPhrase += letter;
+    } else {
+      newPhrase += letter + "o" + letter;
+    }
+  return newPhrase;
+}
+
+   translate("these are some words");
 }
 
 
-// What about Ternary Conditionals?
-function teraryMax (x,y) {
-return x>y ? x : y;
+// ---------------------
+// Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
+// ---------------------
+
+	function reverseAlt (string) {
+  var letters = [];
+  for (var count =0;count< string.length; count++) {
+    var letter = string[count];
+    letters.unshift(letter);
+  }
+  return letters.join("");
 }
 
-// Q2
-// Write a function named `avg` that takes 3 parameters
-// and returns the average of those 3 numbers.
-
- function maxOfThree (x,y,z){
- 	if (x >= y && x> >= z) {return x;}
- 	if (y >= x && y >= z)  {return y;}
- 	return z;
-
- }
-Console.log(maxOfThree)(5,3,5);
-Console.log(maxOfThree)(3,5,5);
-Console.log(maxOfThree)(5,5,3);
-
-// Q3
-// Write a function called `getLength` that takes one
-// parameter (a string) and returns the length
-
-var getLength = functions (string)
-
-
-// Q4
-// Write a function called `greaterThan` that takes
-// two parameters and returns `true` if the second
-// parameter is greater than the first. Otherwise
-// the function should return `false`.
-
-
-
-
-// Q5
-// Write a function called `greet` that takes a
-// single parameter and returns a string that
-// is formated like "Hello, Name!" where *Name*
-// is the parameter that was passed in.
-
-
-
-
-// Q6
-// Write a function called `madlib` that takes
-// 4 or more parameters (words). The function 
-// should insert the words into a pre-defined
-// sentence. Finally the function should return
-// that sentence.
-// Note: When I say words and sentence I mean
-// strings. For example:
-// words: "quick", "fox", "fence"
-// sentence: "quick brown fox jumps over the fence"
-
-
-
-
-///////////////////////////////////////////////////////
-///////////////////////////////////////////////////////
+    //...
+}
