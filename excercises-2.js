@@ -26,15 +26,24 @@ maxOfThree(6,3,6)
 // ---------------------
 
 function isVowel(char){
-	var vowel=["a","e","i","o","u"];
-	if (vowel==="e"){
-		return true;
-	
-	}else{ 
-		return false;
-	}
+	var vowel=char.toLowerCase();
+  if (vowel==="a"){
+    return true;
+  }else if (vowel==="e"){
+    return true;
+  }else if (vowel==="i"){
+    return true;
+  }else if (vowel==="o"){
+    return true;
+  }else if(vowel==="u"){
+    return true;
+  }else{
+    return false;
+  }
+  
 };
-isVowel()
+
+console.log("char");
 
 // ---------------------
 // Write a function translate() that will translate a text into 
@@ -72,5 +81,4 @@ isVowel()
   return letters.join("");
 }
 
-    //...
-}
+  

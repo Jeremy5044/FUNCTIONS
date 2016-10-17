@@ -36,17 +36,9 @@ console.log(largest);
 // ---------------------------
 // 2. Find longest string
 // ---------------------------
- function longest (strings){
-    var totle =0;
-
-  for (var i=0; < strings.length;i++){
-     var totles=strings[i];
-     if (strings[i].length>totle.length){
-           totle=totles;
-     }
-   }
-
-return totle;
+ var i=0;
+ while(strings[i] !== undefined){
+  i+=1;
 };
 //---------------------
 //Using Functiions
@@ -122,9 +114,22 @@ var instructors = [
     { firstname : 'James', teaches : 'Ruby'}
 ];
 
+var teach= function (){
+  var the =[];
+  for (i =0;i<instructors.length;i++){
+    var curInstructors=instructors[i];
+  if(curInstructors.teaches==="JavaScript"){
+    the.push(curInstructors);
+  }
+}
+return the;
+};
 
-
-
+var order=teach().sort(function(a,b){
+  if (a.firstname.toLowerCase() < b.firstname.toLowerCase()) {return -1};
+  if (a.firstname.toLowerCase() >  b.firstname.toLowerCase()) {return 1};
+  return 0;
+});
 
 
 

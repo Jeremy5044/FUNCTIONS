@@ -91,10 +91,10 @@ greatThan(2,6)
 
 
 var greet =function (name){
-	return ("hello" + " " + "jeremy");
+	return "hello" + name;
 		
 	};
-	greet("jeremy")
+	greet("Jeremy");
 
 
 
@@ -108,9 +108,10 @@ var greet =function (name){
 // strings. For example:
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
-var midlib=function(run,jump,fly,duck){
-
-}
+var madlab =function=(ran,jump,skip,hop){
+	return "I" + ran+"and"+jump +"the"+skip,hop"home";
+};
+madlab("ran");
 
 ///////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////
